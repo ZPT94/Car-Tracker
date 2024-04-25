@@ -1,0 +1,7 @@
+Name: Zeb Thomas
+Stack: JavaScript/MERN
+Github Repo link: https://github.com/ZPT94/Car-Tracker
+Project Name: Car Tracker
+Project Description: This is a program to manage railcars on a model railroad. It helps to keep track of what railcars you have, where they are, manufacture, as well as features and modifcations made to them.
+MVP: Be able to create a railcar and add it to the list on the home screen, be able to update the railcars updatable options, and delete it from the database. 
+Bonus features: use tailwind for styling, create an option to randomly select a certain number of railcars (chosen by the user) and randomly put them in a list for the user to then put together on their layout using their trains.
