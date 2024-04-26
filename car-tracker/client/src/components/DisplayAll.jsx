@@ -18,15 +18,15 @@ const DisplayAll = (props) => {
 
     return (
         <div>
-            <header className=' bg-dark-subtle p-1' >
+            <header className=' bg-sky-700' >
                 <div>
                     <h1>Railcar Fleet</h1>
                 </div>
                 <div>
-                    <Link className='btn btn-primary' to={'/railcars/add'}>Add Railcar</Link>
+                    <Link className='' to={'/railcars/add'}>Add Railcar</Link>
                 </div>
             </header>
-            <table className='table table-striped' >
+            <table className='' >
                 <thead>
                     <tr>
                         <th>Car Prefix</th>
