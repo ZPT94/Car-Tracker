@@ -18,7 +18,7 @@ const DisplayAll = (props) => {
 
     return (
         <div>
-            <header className=' bg-sky-700' >
+            <header className='' >
                 <div>
                     <h1>Railcar Fleet</h1>
                 </div>
