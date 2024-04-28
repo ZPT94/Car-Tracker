@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import { train_intermodal } from '../assets';
 
 const DisplayAll = (props) => {
 
@@ -19,6 +20,9 @@ const DisplayAll = (props) => {
     return (
         <div>
             <header className='bg-slate-500 flex flex-row justify-between items-center p-5' >
+            <div>
+                    <img className='w-52' src={train_intermodal} alt="Freight Train" />
+                </div>
                 <div>
                     <h1 className='text-fuchsia-100 decoration-solid text-6xl' >Railcar Fleet</h1>
                 </div>
