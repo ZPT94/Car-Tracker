@@ -8,6 +8,8 @@ const Update = (props) => {
     const navigate = useNavigate("")
     const [errors, setErrors] = useState({})
     const [getter, setter] = useState({
+        prefix: "",
+        number: "",
         location: "",
         features: "",
         modifications: "",
@@ -18,6 +20,8 @@ const Update = (props) => {
         axios.get(`http://localhost:9999/api/railcars/${id}`)
             .then((res) => {
                 setter({
+                    prefix: res.data.prefix,
+                    number: res.data.number,
                     location: res.data.location,
                     features: res.data.features,
                     modifications: res.data.modifications,
