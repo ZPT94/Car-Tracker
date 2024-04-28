@@ -4,15 +4,25 @@ import Nav from '../components/Nav'
 import { useNavigate, useParams } from 'react-router-dom'
 
 const Update = (props) => {
-    const { id } = useParams()
-    const navigate = useNavigate()
+    const {id} = useParams("")
+    const navigate = useNavigate("")
     const [errors, setErrors] = useState({})
-    const [getter, setter] = useState({})
+    const [getter, setter] = useState({
+        location: "",
+        features: "",
+        modifications: "",
+        loaded: ""
+    })
 
     useEffect(() => {
         axios.get(`http://localhost:9999/api/railcars/${id}`)
             .then((res) => {
-                setter(res.data)
+                setter({
+                    location: res.data.location,
+                    features: res.data.features,
+                    modifications: res.data.modifications,
+                    loaded: res.data.loaded
+                })
             })
             .catch((err) => {
                 console.log(err);
@@ -37,7 +47,6 @@ const Update = (props) => {
         e.preventDefault();
         axios.put(`http://localhost:9999/api/railcars/${id}`, getter)
             .then((res) => {
-                console.log(getter)
                 navigate(`/railcars/${res.data._id}/details`)
             })
             .catch((err) => {

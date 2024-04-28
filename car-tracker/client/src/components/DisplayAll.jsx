@@ -9,7 +9,6 @@ const DisplayAll = (props) => {
     useEffect(() => {
         axios.get('http://localhost:9999/api/railcars')
             .then((res) => {
-                console.log(res);
                 setRailcars(res.data)
             })
             .catch((err) => {
