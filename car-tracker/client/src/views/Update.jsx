@@ -119,7 +119,7 @@ const Update = (props) => {
                         <input className='mr-2 leading-tight' type="checkbox" name="loaded" checked={getter.loaded} onChange={(e) => changeHandlerCheckbox(e)} />
                         {
                             errors.loaded ?
-                                <p className='text-red-600'>{errors.open.message}</p> :
+                                <p className='text-red-600'>{errors.loaded.message}</p> :
                                 null
                         }
                     </div>
